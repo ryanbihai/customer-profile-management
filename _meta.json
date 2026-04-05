@@ -1,0 +1,34 @@
+{
+  "ownerId": "",
+  "slug": "customer-profile-management",
+  "version": "1.0.0",
+  "publishedAt": 1775366400000,
+  "namespace": "",
+  "changelog": "v1.0.0: 初始版本 - 保险代理人客户档案管理工具，支持多格式文档解析、档案合并、自然语言查询",
+  "tags": [
+    "保险代理人",
+    "客户档案",
+    "客户管理",
+    "保单管理",
+    "保单录入",
+    "客户查询",
+    "保险CRM",
+    "insurance",
+    "insurance-agent",
+    "customer-management",
+    "policy-management",
+    "document-extraction"
+  ],
+  "security": {
+    "user_consent_required": false,
+    "config_paths_read": [],
+    "runtime_deps": [
+      "python:pandas",
+      "python:openpyxl",
+      "python:python-docx",
+      "python:python-pptx",
+      "python:pdfplumber",
+      "python:requests"
+    ]
+  }
+}
