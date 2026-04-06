@@ -1,27 +1,36 @@
-***
-
+---
 name: insurance-agent-customer-crm
-description: 帮助保险代理人将pdf、Excel、Word、PPT等各类客户资料转化为个人客户信息资料库，方便小龙虾调用和使用，回答下列问题：“帮我为下个月生日的客户撰写个性化的生日祝福”、“帮我为每个保单客户撰写一份个性化的理财活动邀约”，等等。
-tags:
-
-- 保险代理人
-- 保单管理
-- 客户管理
-- 客户档案
-- 客户资料整理
-- 客户跟进
-- 客户维护
-- 客户查询
-- 保险CRM
-- 保险工具箱
-- 代理人工具
-  metadata:
+description: 帮助保险代理人将pdf、Excel、Word、PPT等各类客户资料转化为个人客户信息资料库，方便小龙虾调用和使用，回答下列问题："帮我为下个月生日的客户撰写个性化的生日祝福"、"帮我为每个保单客户撰写一份个性化的理财活动邀约"，等等。
+homepage: https://www.ihaola.com.cn
+metadata:
+  category: utility
+  tags:
+    - 保险代理人
+    - 保单管理
+    - 客户管理
+    - 客户档案
+    - 客户资料整理
+    - 客户跟进
+    - 客户维护
+    - 客户查询
+    - 保险CRM
+    - 保险工具箱
+    - 代理人工具
   openclaw:
-  os: \["darwin", "linux", "windows"]
+    os: ["darwin", "linux", "windows"]
   requires:
-  config: \["api\_key"]
-
-***
+    config:
+      - api_key
+  privacy:
+    consent_required: false
+    data_flow: |
+      本工具处理用户的本地文件，仅调用用户配置的 LLM API 端点进行处理。
+      不主动收集或上传任何客户信息。
+  author:
+    name: haola
+    contact: https://www.ihaola.com.cn
+  license: MIT
+---
 
 # 保险代理人客户档案管理工具
 
@@ -220,7 +229,6 @@ result = query_customer_profile(
 - ✅ API Key 仅用于调用你配置的 LLM 服务，不会发送给其他第三方
 - ✅ 本地文件读写操作仅在本地执行
 - ⚠️ **合规责任**：使用前请确认符合《个人信息保护法》等法规要求，并取得客户同意
-- ✅ 无需担心信息泄露
 
 ## 📊 功能对比
 
@@ -245,7 +253,7 @@ result = query_customer_profile(
 - "刘总上次是什么时候跟我联系的？沟通内容是什么？"
 - "帮我检查一下有没有客户的保单即将到期"
 
-***
+---
 
 **Made with ❤️ for Insurance Agents**
 **让每位保险代理人都能轻松管理客户，提升展业效率**
